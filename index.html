@@ -1,0 +1,673 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Canada FAQ</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="214c9a27-fd68-43b6-a21f-598d710f30d2" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🇨🇦</span></div><h1 class="page-title">Canada FAQ</h1></header><div class="page-body"><h1 id="3665d5a4-5395-4862-9d52-5d2f7e87656a" class="">CUAET</h1><nav id="3baef72c-15c6-454b-9b55-77872d44ca71" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#3665d5a4-5395-4862-9d52-5d2f7e87656a">CUAET</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#48a22799-1319-4a55-8560-0de27535ef17">What to do if I get a foil-less visa?</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#97e50126-c14f-4928-95fb-8fb3bb5ac4f7">Can I still work for a Ukrainian/American company if I move to Canada?</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#f9c8b514-fecf-4b83-952a-98f572b2d10f">I have received an email mentioning a work permit, does it mean I can start working in Canada?</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#bcbe2653-278a-4a4c-b9ac-ab3f0e66f3a2">Should I get a medical exam?</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#5d2c1e6c-9bff-45ff-a76b-b422b22c2857">Permanent Residency</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#a3a4db18-8520-4e48-bcd1-4364364a00f2">How can I stay in Canada forever?</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#5604724f-8f25-4ab3-91ff-4d2983c0b2be">Is it obligatory to get PR?</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2b952160-cb61-45a2-88c8-d7e012a3246f">What provinces are the fastest to get PR?</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#65421253-c353-40f4-a6ba-fa33f4bbbecc">Getting Canadian citizenship</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#65e43c89-24e1-44b6-aa06-a9127b52c481">Miscellaneous</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#7d4e05ca-36b3-4bb5-b8f0-e6dbf5a4bc3a">What should I pay attention to when choosing the province to live in?</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#07ebfcfa-275f-4585-8df3-1ee04a662c53">Can I not vaccinate once I move to Canada?</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#8f81e01e-b8d0-4f71-90d3-16a10202e915">Can I travel to the United States from Canada?</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#9d6cd693-051c-4152-aa82-3ae878d71b2e">Delivery</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2272412a-fa89-48f2-a296-f14e81f0ceb6">Items to do right after landing</a></div></nav><h2 id="48a22799-1319-4a55-8560-0de27535ef17" class="">What to do if I get a foil-less visa?</h2><p id="a19d4ea2-68cb-4f7c-92fa-7173055768a0" class="">Basically, you have two options:</p><p id="fd0662cb-22b9-44db-8748-d207e9859788" class="">1) <strong>Go to Canada and put the visa in your passport directly there.</strong> Please note the following:</p><ul id="426e61bd-895f-492f-b060-3ebdfb7f00e9" class="bulleted-list"><li style="list-style-type:disc">the foil-less visa is valid for 6 months and for 1 entry. It means that once you go to Canada, you will be able to leave the country but won’t be able to return.</li></ul><ul id="d5a989e3-3de3-497b-b663-09bd038f8ce0" class="bulleted-list"><li style="list-style-type:disc">to be eligible to multiple entries, you should put the usual visa in your passport. The detailed process is yet unknown (to be updated) but it most certainly does not happen at the airport.</li></ul><ul id="6720827f-6e88-4354-bda1-f5171fc14769" class="bulleted-list"><li style="list-style-type:disc">the usual validity of the visa you get already in Canada is yet unknown but in theory it should be valid until the end of your passport (to be updated). It is also unknown how long the process of putting the visa in your passport will take and what the process will look like.</li></ul><p id="e37265ef-62f9-45bd-a693-e3cdb7037f92" class="">2) <strong>Send your passport to the visa centre in the usual order.</strong> Please note the following:</p><ul id="b84d6e85-739a-4153-8e30-ff06ab431035" class="bulleted-list"><li style="list-style-type:disc">there have been cases when instead of a long multiple-entry visa people got a visa for 6 months only.</li></ul><ul id="08e8dbda-500d-44fb-bc35-b719a861c9b6" class="bulleted-list"><li style="list-style-type:disc">in the countries where foil-less visa is emitted, the waiting time to get back the passport can be up to 6 weeks.</li></ul><h2 id="97e50126-c14f-4928-95fb-8fb3bb5ac4f7" class="">Can I still work for a Ukrainian/American company if I move to Canada?</h2><p id="9c6a4e24-7aa4-4715-a2b9-48c8cb509b36" class=""> Yes, you can. However, please note the following:</p><ul id="86eaf027-eb13-422c-b650-15a4dd5278ed" class="bulleted-list"><li style="list-style-type:disc">many immigration programs require you to work for a Canadian company to get the PR status;</li></ul><ul id="2a858a7f-b291-4a1d-9bfd-19dc1f897ac6" class="bulleted-list"><li style="list-style-type:disc">after 6 months of residing in Canada you will become a tax resident of Canada meaning you will have to pay Canadian taxes.</li></ul><h2 id="f9c8b514-fecf-4b83-952a-98f572b2d10f" class="">I have received an email mentioning a work permit, does it mean I can start working in Canada?</h2><p id="09b86503-6b81-4562-be31-e485082d8d30" class="">No, unfortunately you still have to go to Canada in person and receive your work permit there. Please note the following:</p><ul id="4f6a727c-e202-46a4-b74a-7c76f79621de" class="bulleted-list"><li style="list-style-type:disc">the decision to give you the work permit lies with the officer at the airport; they can decide not to give you the work permit;</li></ul><ul id="e6623fa9-a23f-46b0-9b8a-b8486e326c10" class="bulleted-list"><li style="list-style-type:disc">please make sure to check your work permit; it should say ‘CUAET’. If it doesn’t, please ask the officer to amend the work permit;</li></ul><ul id="6108ec3d-3a87-4533-83a6-da2e848bc872" class="bulleted-list"><li style="list-style-type:disc">the work permit in theory is irrevocable although no one guarantees that;</li></ul><ul id="fe50820b-cc27-4907-bcb6-55de32c5b7b7" class="bulleted-list"><li style="list-style-type:disc">you can start applying to Canadian companies already; if asked, you should mention that you are getting the work permit soon;</li></ul><ul id="dfda5f6c-cc1c-4bed-abe8-610c95e76b94" class="bulleted-list"><li style="list-style-type:disc">the work permit is valid for 3 years starting on the day you get it.</li></ul><h2 id="bcbe2653-278a-4a4c-b9ac-ab3f0e66f3a2" class="">Should I get a medical exam?</h2><p id="d0bc0ca0-d652-4149-9571-b7781a49ea6b" class="">Yes, you should. It is your responsibility to organise it, attend it and pay for it.</p><h1 id="5d2c1e6c-9bff-45ff-a76b-b422b22c2857" class="">Permanent Residency</h1><h2 id="a3a4db18-8520-4e48-bcd1-4364364a00f2" class="">How can I stay in Canada forever?</h2><p id="21b3ed86-f406-4284-9c54-d02828f3d025" class="">To stay in Canada and establish a life there, you should think about getting a permanent residency status (PR). There are a lot of different immigration programs in Canada; every province has a nomination called PNP, but also there are federal streams (SNS, FWP). Please make sure to educate yourself about the options that suit your needs.</p><p id="18c8af3b-6865-43c5-8abf-d935cb861688" class="">There are multiple ways to get PR, most common are through EE (express entry system).</p><p id="082281dc-1b05-406e-bc8b-c1f8ea2216f3" class="">As of now (May 14, 2022) system chooses eligible candidates from the pool, that are applying via PNP. However government mentioned that in Q3-Q4 system will start working also with CEC and FSW programs.</p><p id="bec6a689-4f95-4068-b806-2fcca66c8f13" class=""><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/canadian-experience-class.html">CEC</a> = Canadian Experience Class, please, visit website for exact requirements, the main one is having at least 1 year of work experience in Canada and <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html">minimum language level</a>.</p><p id="a63d122a-7622-483b-bcb4-3c98f2ae067b" class=""><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html#minimum">FSW</a> = Federal Skilled Worker, please visit website for more details.</p><p id="0557254f-0e09-4278-99e1-f0912956e2fd" class="">Also, some of PNP programs allows you to apply directly for PR, skipping the EE system, but in most cases it takes much more time.</p><p id="adb69690-ce67-4b60-8973-e429b147d7f7" class="">Quebec has different system and worth looking into their specifics.</p><h2 id="5604724f-8f25-4ab3-91ff-4d2983c0b2be" class="">Is it obligatory to get PR?</h2><p id="0fee9d51-ffb0-43a2-811d-8e7391e802db" class="">No, it is not. You may decide not to get it but in that case you will either have to leave Canada once your work permit expires, or you will have to extend your work permit. You will also not be eligible to apply for Canadian citizenship.</p><p id="55946def-8b0a-40cf-9732-b724e067f37f" class="">Please, note, that visa allows you to enter Canada, work permit allows you to work in Canada. You may continue working having valid work permit and expired visa.</p><h2 id="2b952160-cb61-45a2-88c8-d7e012a3246f" class="">What provinces are the fastest to get PR?</h2><p id="a659a89a-c4ed-41ce-88fc-968b0025cae2" class="">In general, most of candidates are applying through PNP or CEC, most of them require 1 year of Canadian work experience, but due to war, some provinces have added additional streams, that allows getting PR faster.</p><p id="d9935991-6c37-43ab-97d9-8136ec736876" class="">There have been changes to the usual process in some provinces, so now you can apply to get the PR status faster.</p><p id="f1491867-0b5f-4c06-a145-cf34e2cb783e" class="">Please, note, that at some point, once you get selected from EE system - you can get implied status, which means that you’ll have the same status as you had on the time, when you’ve applied for PR. This means, that if your WP expires - you can easily get a new one.</p><ul id="68d36fd7-34eb-4887-81d3-719357c98850" class="bulleted-list"><li style="list-style-type:disc">Newfoundland and Labrador - allows to apply once you are employed by a local company.</li></ul><ul id="fc97c212-2254-4e6a-8016-bec8ba13e63a" class="bulleted-list"><li style="list-style-type:disc">Manitoba - allows to apply once you’ve worked for 6 months in a local company or once you’ve established a connection to the province (e.g. by collaborating with the Ukrainian Congress).</li></ul><ul id="16a1263d-4baf-4281-802a-9750433a4b6a" class="bulleted-list"><li style="list-style-type:disc">Alberta tech stream -</li></ul><ul id="fcef9e5a-3b11-497e-86d5-36029f9e2563" class="bulleted-list"><li style="list-style-type:disc">Nova Scotia -</li></ul><p id="e48dc432-4c6f-4ce7-89f6-40e7923cfec9" class="">Please note, that you should keep living at least 730 days out of 5 years in Canada to keep your PR status, more details <a href="https://www.cic.gc.ca/english/helpcentre/answer.asp?qnum=727&amp;top=10">here</a>.</p><h1 id="65421253-c353-40f4-a6ba-fa33f4bbbecc" class="">Getting Canadian citizenship</h1><p id="4cf93ab6-ed5b-4050-9d7c-222b91648baa" class="">After getting PR and living in Canada for 3 years you may apply for Canadian citizenship and getting a Canadian passport.</p><p id="f2143651-e01c-48d7-8a0f-b50adb66c8dd" class="">Please note, that time, that you are working on a WP also counts, but max - 1 year and with coef 1/2.</p><p id="bc342367-5c27-4a08-81e5-5a04a2983600" class="">For example, you’ve been working for a 1 year on WP and then got a PR, this means that you can apply for citizenship after (3 - 1/2) = 2.5 years.</p><p id="e2961aa6-fd4a-4b83-8e7f-ae9a157111de" class="">If you’re working on WP for a 2 years, you can apply for citizenship after (3 - 2/2) = 2 years.
+If you’re working on WP for a 3 or more years, you can apply for citizenship after (3 - 1) = 2 years.</p><p id="a79776b2-59b6-4585-8844-808f79643c19" class="">On average (according to different chat timelines) from landing in Canada to getting a Canadian passport takes about 5-6 years.</p><h1 id="65e43c89-24e1-44b6-aa06-a9127b52c481" class="">Miscellaneous</h1><h2 id="7d4e05ca-36b3-4bb5-b8f0-e6dbf5a4bc3a" class="">What should I pay attention to when choosing the province to live in?</h2><p id="b357ab86-c433-4296-b843-65c5524f9832" class="">It all depends on your personal situation and your plans, whether you want to get PR or not. Among the most important aspects are the following:</p><ul id="3aef0b01-6992-44a5-97eb-373ba33f1fa4" class="bulleted-list"><li style="list-style-type:disc">whether there is work for you in this province at all;</li></ul><ul id="d31b8258-6664-4482-be29-1d78288fe571" class="bulleted-list"><li style="list-style-type:disc">how expensive life is;</li></ul><ul id="30ae258f-c39e-4ceb-b966-3b39125d8af8" class="bulleted-list"><li style="list-style-type:disc">how fast you can get PR and how easy the process is.</li></ul><h2 id="07ebfcfa-275f-4585-8df3-1ee04a662c53" class="">Can I not vaccinate once I move to Canada?</h2><p id="0062527a-539d-4ee6-b1fd-69f2b5d2520c" class="">Please know that the pressure is high to incentivise people to get vaccinated. Please find the list of the vaccines approved by Canada below.</p><ul id="309589c6-2a02-4650-96de-51a4a276647e" class="bulleted-list"><li style="list-style-type:disc">AstraZeneca/COVISHIELD (ChAdOx1-S, Vaxzevria, AZD1222)</li></ul><ul id="4bb1ea11-611e-4813-bf92-4495f67356a5" class="bulleted-list"><li style="list-style-type:disc">Bharat Biotech (Covaxin, BBV152 A, B, C)</li></ul><ul id="b11a27ff-3197-44df-98dd-edef13e7023e" class="bulleted-list"><li style="list-style-type:disc">Janssen/Johnson &amp; Johnson</li></ul><ul id="bb3826d6-c34f-4c25-aebc-ce5b21c548f7" class="bulleted-list"><li style="list-style-type:disc">Medicago Covifenz</li></ul><ul id="b0d38a4e-66f4-498b-bf61-b431e252a3dc" class="bulleted-list"><li style="list-style-type:disc">Moderna (Spikevax, mRNA-1273) including for children aged 6 to 11 years</li></ul><ul id="0468770d-24d0-46e0-b4f6-0649fe869bbb" class="bulleted-list"><li style="list-style-type:disc">Novavax (NVX-COV2373, Nuvaxovid, Covovax)</li></ul><ul id="aaba02e2-be1c-4cf5-bda2-750223e28cbb" class="bulleted-list"><li style="list-style-type:disc">Pfizer-BioNTech (Comirnaty, tozinameran, BNT162b2) including for children aged 5 to 11 years</li></ul><ul id="88f95639-33e1-4c39-9ca0-c1f3f2bb7bcf" class="bulleted-list"><li style="list-style-type:disc">Sinopharm BIBP (BBIBP-CorV)</li></ul><ul id="64d81423-26bf-4ac5-9fa4-737a43c83f40" class="bulleted-list"><li style="list-style-type:disc">Sinovac (CoronaVac, PiCoVacc)</li></ul><h2 id="8f81e01e-b8d0-4f71-90d3-16a10202e915" class="">Can I travel to the United States from Canada?</h2><p id="644e2f57-a0d7-4e8d-9aee-3ebf35769c42" class="">Yes, you can, but you still need to get a visa to the US. You can get one in Canada, and the amount of approved applications tends to be higher than outside of Canada.</p><p id="bf2a8098-b246-4182-8093-7ef1a35166db" class="">If you already hold a Canadian passport - you do not need visa to enter US. If you plan working in US - you need a visa, for Canadians there is a special visa, TN that allows you to work in US(it can be granted on the border, please investigate required documents for this type of visa).</p><h2 id="9d6cd693-051c-4152-aa82-3ae878d71b2e" class="">Delivery</h2><p id="02ebe369-1381-4b20-8fc7-18205449ac5d" class="">If you would like to order food, pharmacy, etc. you may use some of the popular applications:</p><ul id="b16266ce-4ae5-4dd6-b40a-944ed3c7921c" class="bulleted-list"><li style="list-style-type:disc">Uber eats - most expensive delivery. <a href="https://play.google.com/store/apps/details?id=com.ubercab.eats&amp;hl=en_CA&amp;gl=US">Android</a>, <a href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277">iPhone</a>.</li></ul><ul id="9ffe6bae-addc-4dcc-8a37-5b41456cf30b" class="bulleted-list"><li style="list-style-type:disc">DoorDash. <a href="https://play.google.com/store/apps/details?id=com.dd.doordash&amp;hl=en_CA&amp;gl=US">Android</a>, <a href="https://apps.apple.com/us/app/doordash-food-delivery/id719972451">iPhone</a>.</li></ul><ul id="0fba8976-d5f4-48db-b4e4-53ed7a95aa30" class="bulleted-list"><li style="list-style-type:disc">Instacart. <a href="https://play.google.com/store/apps/details?id=com.instacart.client&amp;hl=en_CA&amp;gl=US">Android</a>, <a href="https://apps.apple.com/us/app/instacart-grocery-delivery/id545599256">iPhone</a>.</li></ul><ul id="3ad55fb6-7ea1-4494-a72a-8deada244097" class="bulleted-list"><li style="list-style-type:disc">Skip the dishes. <a href="https://play.google.com/store/apps/details?id=com.ncconsulting.skipthedishes_android&amp;hl=en_CA&amp;gl=US">Android</a>, <a href="https://apps.apple.com/ca/app/skipthedishes-food-delivery/id969229981">iPhone</a>.</li></ul><ul id="c195dbed-2056-4e6b-ace6-8baeb019af2d" class="bulleted-list"><li style="list-style-type:disc">Wallmart. <a href="https://play.google.com/store/apps/details?id=com.walmart.android&amp;hl=en_CA&amp;gl=US">Android</a>, <a href="https://apps.apple.com/ca/app/walmart-shopping-made-easy/id1084793516">iPhone</a>.</li></ul><p id="ddb375a7-6972-43d3-a219-cd8b6f31bc1d" class="">And many more, also if you’ve found any shop, grocery, etc - check their website, most of them support their own delivery.</p><p id="c316c7f2-cde6-412d-9c97-0c3abd2a4c8f" class="">Most of the applications work with Ukrainian bank cards, but worth checking.</p><h2 id="2272412a-fa89-48f2-a296-f14e81f0ceb6" class="">Items to do right after landing</h2><ul id="3a768f8d-e3d1-49c9-8566-12e5775f50a2" class="bulleted-list"><li style="list-style-type:disc">Get a WP right after passport control in airport. DO NOT LEAVE airport without WP. However it is possible to get it later, but it takes much more time.</li></ul><ul id="a425b14c-2458-4e69-90dd-efe955ec8bdd" class="bulleted-list"><li style="list-style-type:disc">Get SIN for all family members - you may go directly to Service Canada and in a live queue get a SIN (actual paperwork takes about 5-10 minutes), or apply online or via email (it may take few weeks to get it done).</li></ul><ul id="0eea1554-c3f5-4ddd-a166-ea3b72249781" class="bulleted-list"><li style="list-style-type:disc">Get a Canadian phone number. Most of the people do not recommend using Bell or Rogers, take a look into Telus, Fido, etc - they are cheaper and have better coverage.</li></ul><ul id="05d95921-af05-4f5a-acbb-fec67c9f450a" class="bulleted-list"><li style="list-style-type:disc">Get a bank account. Google top 5 banks in Canada - google newcomers package, choose no fee(!!!) credit card. All banks are pretty much the same, read diff for newcomers package and choose any that fits you better.</li></ul><ul id="f8cde638-91e2-4c79-b563-7bfec0da92c2" class="bulleted-list"><li style="list-style-type:disc">Find permanent place - rent a house or apartment<ul id="df705e32-5017-4249-978a-f3a9ad6ae23e" class="bulleted-list"><li style="list-style-type:circle"><a href="https://rentals.ca/">https://rentals.ca/</a></li></ul><ul id="e68820e3-6aba-46e1-bcee-e8d9be376509" class="bulleted-list"><li style="list-style-type:circle"><a href="https://kijiji.ca/">https://kijiji.ca/</a></li></ul><ul id="157ad747-8cc6-4188-9d39-5563ded52664" class="bulleted-list"><li style="list-style-type:circle"><a href="https://www.zumper.com/">https://www.zumper.com/</a></li></ul><ul id="f3bcd07c-07cb-43e1-9948-08dd91b1a57c" class="bulleted-list"><li style="list-style-type:circle"><a href="https://www.zillow.com/">https://www.zillow.com/</a></li></ul><ul id="7789d465-c644-46e9-83cc-be3d84bf326f" class="bulleted-list"><li style="list-style-type:circle"><a href="https://property.ca/">https://property.ca/</a></li></ul><ul id="643b7d6e-b3ae-4ee6-b64c-82ef7d8d34b5" class="bulleted-list"><li style="list-style-type:circle">Facebook marketplace</li></ul></li></ul><ul id="57fe9d0c-b949-475f-a46c-be6decc84621" class="bulleted-list"><li style="list-style-type:disc">Apply for health insurance - requirement vary based on province, google that</li></ul><ul id="b3312219-5c9a-4d7b-b86a-6da42d6a4bad" class="bulleted-list"><li style="list-style-type:disc">Find a work (in between of those steps)</li></ul><ul id="ef29f5e3-f63f-4886-b082-e6a4894ff4a9" class="bulleted-list"><li style="list-style-type:disc">Enjoy living in Canada</li></ul><p id="863b64a1-86a8-4813-aafb-c131f455d7d3" class="">
+</p><p id="0f80df42-931a-4a9d-b7c2-4662a741f312" class="">
+</p><p id="24049347-edc4-40e4-b131-712a11b8da66" class="">
+</p></div></article></body></html>
